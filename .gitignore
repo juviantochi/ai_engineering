@@ -1,0 +1,11 @@
+# Ignore everything
+*
+
+# Exception: track only these
+!.gitignore
+!.claude/
+!.claude/**
+!documentation/
+!documentation/**
+!rfc/
+!rfc/**
