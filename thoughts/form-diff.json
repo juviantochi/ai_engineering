@@ -1,0 +1,1099 @@
+{
+  "added": [
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Nomer KK",
+        "Family Card Number"
+      ],
+      "Group": "Informasi pribadi",
+      "Sub group": "Informasi pribadi",
+      "Field name (ID)": "Nomer KK",
+      "Field name (EN)": "Family Card Number",
+      "Field type": "Text",
+      "Validation": "",
+      "Mandatory?": "",
+      "Logic": "- Pre-filled from KYC/KYB",
+      "Remarks": "OCR run to prefill, but still editable",
+      "Required by Compliance?": "Yes",
+      "": ""
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Alamat domisili",
+        "Lama Tinggal",
+        "Length of Stay / Duration of Residence"
+      ],
+      "Group": "Informasi pribadi",
+      "Sub group": "Alamat domisili",
+      "Field name (ID)": "Lama Tinggal",
+      "Field name (EN)": "Length of Stay / Duration of Residence",
+      "Field type": "Text/Dropdown",
+      "Validation": "",
+      "Mandatory?": "",
+      "Logic": "",
+      "Remarks": "years",
+      "Required by Compliance?": "Not required",
+      "": ""
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Lokasi Usaha",
+        "Business Location"
+      ],
+      "Group": "Informasi usaha",
+      "Sub group": "Informasi usaha",
+      "Field name (ID)": "Lokasi Usaha",
+      "Field name (EN)": "Business Location",
+      "Field type": "Dropdown",
+      "Validation": "Numeric",
+      "Mandatory?": "Y",
+      "Logic": "",
+      "Remarks": "1. Area Industri, Jalan Raya\n2. Area Industri, Non-Jalan Raya\n3. Area Perumahan, Jalan Utama\n4. Area Perumahan, Non-Jalan Utama",
+      "Required by Compliance?": "Yes",
+      "": ""
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Berapa tahun menjalankan usaha agen pembayaran?",
+        "How many years have you run the payment agent business?"
+      ],
+      "Group": "Informasi usaha",
+      "Sub group": "Informasi usaha",
+      "Field name (ID)": "Berapa tahun menjalankan usaha agen pembayaran?",
+      "Field name (EN)": "How many years have you run the payment agent business?",
+      "Field type": "Text",
+      "Validation": "Numeric",
+      "Mandatory?": "Y",
+      "Logic": "",
+      "Remarks": "",
+      "Required by Compliance?": "Yes",
+      "": ""
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Penghasilan Per bulan",
+        "Monthly Income"
+      ],
+      "Group": "Informasi usaha",
+      "Sub group": "Informasi usaha",
+      "Field name (ID)": "Penghasilan Per bulan",
+      "Field name (EN)": "Monthly Income",
+      "Field type": "Slider",
+      "Validation": "Numeric",
+      "Mandatory?": "Y",
+      "Logic": "",
+      "Remarks": "",
+      "Required by Compliance?": "Yes",
+      "": ""
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Gaji Karyawan",
+        "Employee Salaries"
+      ],
+      "Group": "Informasi usaha",
+      "Sub group": "Informasi usaha",
+      "Field name (ID)": "Gaji Karyawan",
+      "Field name (EN)": "Employee Salaries",
+      "Field type": "Text",
+      "Validation": "Numeric",
+      "Mandatory?": "Y",
+      "Logic": "",
+      "Remarks": "Remove!",
+      "Required by Compliance?": "Not required",
+      "": ""
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Biaya Sewa",
+        "Rental Costs"
+      ],
+      "Group": "Informasi usaha",
+      "Sub group": "Informasi usaha",
+      "Field name (ID)": "Biaya Sewa",
+      "Field name (EN)": "Rental Costs",
+      "Field type": "Text",
+      "Validation": "Numeric",
+      "Mandatory?": "N",
+      "Logic": "",
+      "Remarks": "",
+      "Required by Compliance?": "Not required",
+      "": ""
+    },
+    {
+      "key": [
+        "Syarat dan ketentuan",
+        "Syarat dan ketentuan",
+        "Pemahaman Risiko sebagai Penerima Dana",
+        "Understanding of Risks as a Fund Recipient"
+      ],
+      "Group": "Syarat dan ketentuan",
+      "Sub group": "Syarat dan ketentuan",
+      "Field name (ID)": "Pemahaman Risiko sebagai Penerima Dana",
+      "Field name (EN)": "Understanding of Risks as a Fund Recipient",
+      "Field type": "",
+      "Validation": "",
+      "Mandatory?": "",
+      "Logic": "",
+      "Remarks": "Signed digitally without VIDA",
+      "Required by Compliance?": "Yes",
+      "": ""
+    },
+    {
+      "key": [
+        "Syarat dan ketentuan",
+        "Syarat dan ketentuan",
+        "Penggunaan data pribadi",
+        "Use of Personal Data"
+      ],
+      "Group": "Syarat dan ketentuan",
+      "Sub group": "Syarat dan ketentuan",
+      "Field name (ID)": "Penggunaan data pribadi",
+      "Field name (EN)": "Use of Personal Data",
+      "Field type": "",
+      "Validation": "",
+      "Mandatory?": "",
+      "Logic": "",
+      "Remarks": "Signed digitally without VIDA",
+      "Required by Compliance?": "Yes",
+      "": ""
+    }
+  ],
+  "removed": [
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Estimasi penghasilan bersih/bulan",
+        "Estimated Net Monthly Income"
+      ],
+      "Group": "Informasi usaha",
+      "Sub group": "Informasi usaha",
+      "Field name (ID)": "Estimasi penghasilan bersih/bulan",
+      "Field name (EN)": "Estimated Net Monthly Income",
+      "Field type": "Text",
+      "Validation": "Numeric",
+      "Mandatory?": "Y",
+      "Logic": "",
+      "Remarks": "",
+      "": ""
+    }
+  ],
+  "changes": [
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Nama",
+        "Name"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "Displayed unedittable, for review purpose."
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Nomor KTP",
+        "National ID Number"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "Displayed unedittable, for review purpose."
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Tempat lahir",
+        "Place of Birth"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "Displayed unedittable, for review purpose."
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Tanggal lahir",
+        "Date of Birth"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "Displayed unedittable, for review purpose.\nBased on POJK, min age is 18. Can we put the logic here if the users below 18, so he cant apply."
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Nomor HP",
+        "Mobile Phone Number"
+      ],
+      "diff": {
+        "Logic": {
+          "current": "- Pre-filled from KYC/KYB",
+          "proposed": ""
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Jenis kelamin",
+        "Gender"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "Displayed unedittable, for review purpose. Parsed via NIK."
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Status perkawinan",
+        "Marital Status"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "OCR run to prefill, but still editable"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Kartu keluarga",
+        "Family Registration Document"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Limit pinjaman yang diajukan",
+        "Requested Loan Limit"
+      ],
+      "diff": {
+        "Field type": {
+          "current": "Dropdown",
+          "proposed": "Slider"
+        },
+        "Remarks": {
+          "current": "Dropdown filling :\n- 10 Juta\n- 20 Juta\n- 40 Juta\n- 60 Juta",
+          "proposed": "Applied amount starts from 3 million, max 50 mil"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Bank statement",
+        "Bank Statement"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Tujuan pinjaman",
+        "Loan Purpose"
+      ],
+      "diff": {
+        "Field type": {
+          "current": "Text",
+          "proposed": "Dropdown"
+        },
+        "Remarks": {
+          "current": "",
+          "proposed": "Tambahan Modal Kerja (Working Capital Addition)\n\nPembayaran Gaji Karyawan (Employee Salary Payment)\n\nPembayaran Sewa Tempat (Business Premise Rent Payment)\n\nRenovasi Tempat Usaha (Business Renovation / Premise Improvement)\n\nEkspansi Usaha / Penambahan Cabang (Business Expansion / New Branch Opening)\n\nPembelian Inventori Usaha (Business Inventory Purchase)"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Email",
+        "Email"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "Remove!"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Agama",
+        "Religion"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "Dropdown filling :\nAs per all religion acknolwedged in Indonesia",
+          "proposed": "Remove!"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Nama ibu kandung",
+        "Mother\u0092s Maiden Name"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Apakah anda memiliki NPWP?",
+        "Do you have a Tax ID Number?"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "Remove!"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi pribadi",
+        "Nomor NPWP",
+        "Tax ID Number"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "set rule on minimum digit and format\n\nRemove!"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi Bank",
+        "Nama bank",
+        "Bank Name"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi Bank",
+        "Nomor Rekening",
+        "Account Number"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Informasi Bank",
+        "Periksa",
+        "Verify"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Kontak darurat 1",
+        "Nama",
+        "Name"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "Need confirmation from the guarantoor him/herself - If guarantor doesn't reply, what to do next? Kindly confirm Muh Fadhly Dzil Ikram"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Kontak darurat 1",
+        "Nomor HP",
+        "Mobile Phone Number"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Kontak darurat 1",
+        "Relasi",
+        "Relationship"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "Dropdown filling -> To be filled by Fadhly",
+          "proposed": "1. Pasangan\n2. Orang Tua\n3. Saudara\n4. Tante/Paman\n5. Saudara Sepupu\n6. Rekan Kerja"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Kontak darurat 2",
+        "Nama",
+        "Name"
+      ],
+      "diff": {
+        "Mandatory?": {
+          "current": "N",
+          "proposed": "Y"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Kontak darurat 2",
+        "Nomor HP",
+        "Mobile Phone Number"
+      ],
+      "diff": {
+        "Mandatory?": {
+          "current": "N",
+          "proposed": "Y"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Kontak darurat 2",
+        "Relasi",
+        "Relationship"
+      ],
+      "diff": {
+        "Mandatory?": {
+          "current": "N",
+          "proposed": "Y"
+        },
+        "Remarks": {
+          "current": "Dropdown filling -> To be filled by Fadhly",
+          "proposed": "1. Pasangan\n2. Orang Tua\n3. Saudara\n4. Tante/Paman\n5. Saudara Sepupu\n6. Rekan Kerja"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Alamat sesuai KTP",
+        "Provinsi",
+        "Province"
+      ],
+      "diff": {
+        "Logic": {
+          "current": "- Pre-filled from KYC/KYB",
+          "proposed": "OCR run to prefill, but still editable"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Alamat sesuai KTP",
+        "Kota / kabupaten",
+        "City / Regency"
+      ],
+      "diff": {
+        "Logic": {
+          "current": "- Pre-filled from KYC/KYB",
+          "proposed": "OCR run to prefill, but still editable"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Alamat sesuai KTP",
+        "Kecamatan",
+        "Sub-district"
+      ],
+      "diff": {
+        "Logic": {
+          "current": "- Pre-filled from KYC/KYB",
+          "proposed": "OCR run to prefill, but still editable"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Alamat sesuai KTP",
+        "Kelurahan",
+        "Urban Village"
+      ],
+      "diff": {
+        "Logic": {
+          "current": "- Pre-filled from KYC/KYB",
+          "proposed": "OCR run to prefill, but still editable"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Alamat sesuai KTP",
+        "Kodepos",
+        "Postal Code"
+      ],
+      "diff": {
+        "Logic": {
+          "current": "- Pre-filled from KYC/KYB",
+          "proposed": "OCR run to prefill, but still editable"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Alamat sesuai KTP",
+        "Alamat",
+        "Address"
+      ],
+      "diff": {
+        "Logic": {
+          "current": "- Pre-filled from KYC/KYB",
+          "proposed": "OCR run to prefill, but still editable"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Alamat sesuai KTP",
+        "RT",
+        "Neighborhood Unit"
+      ],
+      "diff": {
+        "Logic": {
+          "current": "- Pre-filled from KYC/KYB",
+          "proposed": "OCR run to prefill, but still editable"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Alamat sesuai KTP",
+        "RW",
+        "Community Unit"
+      ],
+      "diff": {
+        "Logic": {
+          "current": "- Pre-filled from KYC/KYB",
+          "proposed": "OCR run to prefill, but still editable"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Alamat domisili",
+        "Apakah alamat domisili sama dengan alamat KTP?",
+        "Is your domicile address the same as your ID address?"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi pribadi",
+        "Alamat domisili",
+        "Status tempat tinggal",
+        "Residential Status (own/rent)"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Nama usaha",
+        "Business Name"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Jenis usaha",
+        "Business Type"
+      ],
+      "diff": {
+        "Field type": {
+          "current": "Text",
+          "proposed": "Dropdown"
+        },
+        "Remarks": {
+          "current": "",
+          "proposed": "Dropdown filling -> To be filled by Fadhly"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Jumlah toko",
+        "Number of Stores"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Berapa tahun menjalankan usaha?",
+        "How many years have you run this business?"
+      ],
+      "diff": {
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Estimasi pengeluaran/bulan",
+        "Estimated Monthly Expenses"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "Probably removed"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes - But can be calculated by internal BW/GT"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Jumlah karyawan",
+        "Number of Employees"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "Remove!"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Informasi usaha",
+        "Status kepemilikan toko",
+        "Store Ownership Status"
+      ],
+      "diff": {
+        "Field type": {
+          "current": "Radio button",
+          "proposed": "Dropdown"
+        },
+        "Remarks": {
+          "current": "",
+          "proposed": "Milik Sendiri\nSewa\n\nTo be reviewed and confirmed by Fadhly"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Alamat usaha",
+        "Apakah alamat usaha sama dengan alamat domisili?",
+        "Is your business address the same as your domicile address?"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "Remove!"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Dokumen pendukung",
+        "Foto tampak depan toko",
+        "Front View Photo of Store"
+      ],
+      "diff": {
+        "Mandatory?": {
+          "current": "Y",
+          "proposed": "N"
+        },
+        "Remarks": {
+          "current": "",
+          "proposed": "If KYB < 6 months, pre-fillled, else, let it empty\n\nTo be reviewed and confirmed by Fadhly"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Dokumen pendukung",
+        "Foto selfie di depan toko",
+        "Selfie Photo in Front of Store"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "If KYB < 6 months, pre-fillled, else, let it empty"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Dokumen pendukung",
+        "Foto tampak dalam toko",
+        "Interior Photo of Store"
+      ],
+      "diff": {
+        "Mandatory?": {
+          "current": "Y",
+          "proposed": "N"
+        },
+        "Remarks": {
+          "current": "",
+          "proposed": "If KYB < 6 months, pre-fillled, else, let it empty\n\nTo be reviewed and confirmed by Fadhly"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Dokumen pendukung",
+        "Nomer Induk Berusaha (NIB)",
+        "Business Identification Number"
+      ],
+      "diff": {
+        "Mandatory?": {
+          "current": "Y",
+          "proposed": "N"
+        },
+        "Remarks": {
+          "current": "",
+          "proposed": "If KYB < 6 months, pre-fillled, else, let it empty"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Dokumen pendukung",
+        "Apakah anda memiliki keanggotaan Laku Pandai?",
+        "Do you have a Laku Pandai membership?"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "If KYB < 6 months, pre-fillled, else, let it empty"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Informasi usaha",
+        "Dokumen pendukung",
+        "Bukti keanggotaan Laku Pandai dari bank manapun",
+        "Proof of Laku Pandai membership from any bank"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "To be reviewed and confirmed by Fadhly"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Psychometric",
+        "Psychometric",
+        "Psychometric",
+        "Psychometric"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "",
+          "proposed": "2nd phase"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Not required"
+        }
+      }
+    },
+    {
+      "key": [
+        "Syarat dan ketentuan",
+        "Syarat dan ketentuan",
+        "Saya menyetujui syarat dan ketentuan",
+        "I agree to the terms and conditions"
+      ],
+      "diff": {
+        "Remarks": {
+          "current": "Pastikan include tnc di halaman ini : https://www.gandengtangan.co.id/id",
+          "proposed": "Pastikan include tnc di halaman ini : https://www.gandengtangan.co.id/id\n\nCan be ticked"
+        },
+        "Required by Compliance?": {
+          "current": "",
+          "proposed": "Yes"
+        }
+      }
+    }
+  ]
+}

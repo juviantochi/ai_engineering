@@ -1,0 +1,39 @@
+Orders,Method,API Path,Notes
+1,POST,/api/v2/auth/otp/send,
+2,POST,/api/v1/auth/login/standalone,
+3,POST,/janus/api/accounts,
+4,POST,/janus/api/checks/ktp_ocr,
+5,POST,/janus/api/checks/email,
+6,POST,/janus/api/checks/email/save,
+7,POST,/janus/api/v3/checks/face_matching/file,
+8,POST,/janus/api/kyb/checks/upload,
+9,POST,/janus/api/kyb/checks/submit,
+10,-,VERIFY STORE FROM PANACEA,manual action from Panacea
+11,GET,/janus/api/accounts/{account_id},verify that the KYC status is SUPREME
+12,GET,/los/api/accounts/v2/is-eligible,verify that the user is eligible for BMU
+13,POST,/merchant-onboarding/upload/file,"upload TAMPAK_DEPAN, use filename in the response for request payload of /merchant/registration"
+14,POST,/merchant-onboarding/merchant/registration,this will create a new record in merchant_data with the status of WAITING_FOR_REVIEW
+15,PATCH,/merchant-onboarding/v2/panacea/merchant/{merchant-id}/data-verify,"this will trigger borrower registration API call to GT through fs-brick-service (see 15.1), please consult partner_event_audit table for the registration result"
+15.1,POST,/fs/brick/service/gt/request,this will call GT API for the borrower registration
+16,GET,/merchant-onboarding/merchant/bnpl/merchant/status,verify that the uploaded TAMPAK_DEPAN earlier is returned in the response
+17,PATCH,/golden-gate/api/onboarding/v2/merchant/{merchant-id}/approve-limit,
+17.1,PATCH,/merchant-onboarding/v2/panacea/merchant/{merchant-id}/approve-limit,"this will create a new record in loan_user with the status of APPROVED (via LOS API call, see 17.1), and also update the status in merchant_data to LIMIT_SET"
+17.1.1,PUT,/los/api/v4/internal/cashloan/user-limit,
+18,GET,/golden-gate/api/lending/v2/cashloan/user-limit/{limit-id}/get-prefilled-master-agreement,"not mandatory, just checking that the prefilled master agreement can be generated"
+18.1,GET,/los/api/v4/internal/cashloan/user-limit/{limit-id}/get-prefilled-master-agreement,see 18
+19,PATCH,/golden-gate/api/onboarding/v2/merchant/{merchant-id}/activate-limit,
+19.1,PATCH,/merchant-onboarding/v2/panacea/merchant/{merchant-id}/activate-limit,this will set the loan_user.loan_user_status to ACTIVE
+19.1.1,PATCH,/los/api/v4/internal/cashloan/user-limit/{limit-id}/activate,
+20,PATCH,/golden-gate/api/onboarding/v2/merchant/{merchant-id}/edit-limit,"not mandatory, just checking if the limit (disbursement limit, current limit, max limit, tenure fee setup) can be edited"
+20.1,PATCH,/merchant-onboarding/v2/panacea/merchant/{merchant-id}/edit-limit,
+20.1.1,PATCH,/los/api/v4/internal/cashloan/user-limit/{limit-id}/edit,"if you edit limit directly by hitting this API (instead of hitting it from BNPL), then the merchant activity of edit limit would be lost (bnpl_registration_activity_details table)"
+21,POST,/los/api/v4/cashloan/loan/{limit-id}/transaction-agreement,"not mandatory, just checking that the transaction agreement can be generated, this will be called from the app, just before submitting loan (the tick box of TnC)"
+22,POST,/los/api/v4/cashloan/loan,"this will create record in loan with the status of PROCESSING and disbursement status of PROCESSING, this will be hit from FE"
+23,PATCH,/golden-gate/api/lending/v2/cashloan/loan/{loan-id}/verify,
+23.1,PATCH,/los/api/v4/internal/cashloan/loan/{loan-id}/verify,this will publish a kafka event to blackhole which will hit /disburse below (see 24)
+24,POST,/los/api/v4/internal/cashloan/loan/disburse,not mandatory if the self-call to this API from /verify is already triggered
+25,GET,/los/api/v4/internal/cashloan/loan/{loan-id},get partnerLoanId from response to be used below (see 26)
+26,PATCH,/los/api/v4/internal/cashloan/loan/{loan-id}/confirm-disbursement,this will update the loan.loan_status to ACTIVE and loan.disbursement_status to DISBURSED
+27,PATCH,/los/api/v4/internal/cashloan/loan/{loan-id}/confirm-repayment,"after this call, make sure the loan.loan_status is updated to CLOSED
+
+this operation will also create a record in loan_transaction_mapping and loan_transaction"
