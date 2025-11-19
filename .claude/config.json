@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "github": {
+      "type": "mcp",
+      "command": "mcp-github",
+      "config": {
+        "repositories": [
+          {
+            "owner": "bukuwarung",
+            "repo": "fs-brick-service",
+            "branch": "main"
+          }
+        ],
+        "token": ""
+      }
+    },
+    "jira": {
+      "type": "mcp",
+      "command": "docker run --rm -i ghcr.io/sooperset/mcp-atlassian:latest --verbose --jira-url https://bukuwarung.atlassian.net --jira-username juvianto.chi@bukuwarung.com --jira-token ATATT3xFfGF0tzsgKpGw0iSTBcfDJ7D1KepVnDsA1Xa5sJuPS34kHWyaqjIh3p9oerVT3zzUFK7SYkZmNlQuhpVXxRdDXcl8qzYSNxbm-KSDLjUkDpInXiyZgmuIx-qz2sLWEm7yoMchQWREYyz6oM1dYEIEIJ5TOKQM_WQ4x7twb06gmUpPkOs=03B6E6EC --confluence-url https://bukuwarung.atlassian.net/wiki --confluence-username juvianto.chi@bukuwarung.com --confluence-token ATATT3xFfGF0tzsgKpGw0iSTBcfDJ7D1KepVnDsA1Xa5sJuPS34kHWyaqjIh3p9oerVT3zzUFK7SYkZmNlQuhpVXxRdDXcl8qzYSNxbm-KSDLjUkDpInXiyZgmuIx-qz2sLWEm7yoMchQWREYyz6oM1dYEIEIJ5TOKQM_WQ4x7twb06gmUpPkOs=03B6E6EC"
+    },
+    "claude-context": {
+      "command": "npx",
+      "args": ["@zilliz/claude-context-mcp@latest"],
+      "env": {
+        "OPENAI_API_KEY": "",
+        "MILVUS_ADDRESS": "",
+        "MILVUS_TOKEN": ""
+      }
+    }
+  }
+}
